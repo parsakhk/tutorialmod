@@ -1,6 +1,7 @@
 package net.honeycomb.tutorialmod.block;
 
 import net.honeycomb.tutorialmod.TutorialMod;
+import net.honeycomb.tutorialmod.block.custom.HealerStation;
 import net.honeycomb.tutorialmod.item.ModItemGroups;
 import net.honeycomb.tutorialmod.item.ModItems;
 import net.minecraft.world.item.BlockItem;
@@ -23,6 +24,10 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> TONE = registerBlock("tone",
             () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(9f).explosionResistance(19f).requiresCorrectToolForDrops())
+            , ModItemGroups.PARSA_MOD);
+
+    public static final RegistryObject<Block> HEALER_STATION = registerBlock("healer_station",
+            () -> new HealerStation(BlockBehaviour.Properties.of(Material.HEAVY_METAL).strength(9f).instabreak())
             , ModItemGroups.PARSA_MOD);
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {

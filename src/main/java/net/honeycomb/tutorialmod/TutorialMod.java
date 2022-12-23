@@ -3,6 +3,7 @@ package net.honeycomb.tutorialmod;
 import com.mojang.logging.LogUtils;
 import net.honeycomb.tutorialmod.block.ModBlocks;
 import net.honeycomb.tutorialmod.item.ModItems;
+import net.honeycomb.tutorialmod.painting.ModPainting;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
@@ -45,6 +46,7 @@ public class TutorialMod
         modEventBus.addListener(this::commonSetup);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModPainting.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);

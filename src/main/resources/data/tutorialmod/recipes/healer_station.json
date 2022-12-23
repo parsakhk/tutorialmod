@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
+      "item": "minecraft:iron_block"
+    },
+    "E": {
+      "item": "minecraft:emerald"
+    }
+  },
+  "pattern": [
+    "#E#"
+  ],
+  "result": {
+    "count": 1,
+    "item": "tutorialmod:healer_station"
+  }
+}

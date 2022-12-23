@@ -1,3 +1,7 @@
 {
-  "item.tutorialmod.magic_red_gem": "Red Magical Gem"
+  "item.tutorialmod.magic_red_gem": "Red Magical Gem",
+  "item.tutorialmod.orange": "Orange",
+  "item.tutorialmod.carbonated_turasiem": "Carbonated Turasiem",
+  "item.tutorialmod.melon_sword": "Melon Sword",
+  "block.tutorialmod.healer_station": "Healer Station"
 }
